@@ -5,18 +5,18 @@ import Greet from "./components/Greet.vue";
 </script>
 
 <template>
-  <div class="container">
-    <h1>Welcome to Tauri!</h1>
+  <div class="flex flex-col justify-center items-center w-full h-screen space-y-12 bg-neutral-50 dark:bg-neutral-800 text-neutral-900 dark:text-neutral-50">
+    <h1 class="text-4xl font-semibold">Welcome to Tauri!</h1>
 
-    <div class="row">
+    <div class="flex space-x-12">
       <a href="https://vitejs.dev" target="_blank">
-        <img src="/vite.svg" class="logo vite" alt="Vite logo" />
+        <img src="/vite.svg" class="w-16 aspect-square" alt="Vite logo" />
       </a>
       <a href="https://tauri.app" target="_blank">
-        <img src="/tauri.svg" class="logo tauri" alt="Tauri logo" />
+        <img src="/tauri.svg" class="w-16 aspect-square" alt="Tauri logo" />
       </a>
       <a href="https://vuejs.org/" target="_blank">
-        <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
+        <img src="./assets/vue.svg" class="w-16 aspect-square" alt="Vue logo" />
       </a>
     </div>
 
@@ -24,15 +24,15 @@ import Greet from "./components/Greet.vue";
 
     <p>
       Recommended IDE setup:
-      <a href="https://code.visualstudio.com/" target="_blank">VS Code</a>
+      <a class="underline" href="https://code.visualstudio.com/" target="_blank">VS Code</a>
       +
-      <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>
+      <a class="underline" href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>
       +
-      <a href="https://github.com/tauri-apps/tauri-vscode" target="_blank"
+      <a class="underline" href="https://github.com/tauri-apps/tauri-vscode" target="_blank"
         >Tauri</a
       >
       +
-      <a href="https://github.com/rust-lang/rust-analyzer" target="_blank"
+      <a class="underline" href="https://github.com/rust-lang/rust-analyzer" target="_blank"
         >rust-analyzer</a
       >
     </p>
@@ -40,13 +40,3 @@ import Greet from "./components/Greet.vue";
     <Greet />
   </div>
 </template>
-
-<style scoped>
-.logo.vite:hover {
-  filter: drop-shadow(0 0 2em #747bff);
-}
-
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #249b73);
-}
-</style>
