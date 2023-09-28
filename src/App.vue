@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { Dropdown, ListGroup, ListGroupItem } from "flowbite-vue";
+
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 let options = {
@@ -48,5 +50,12 @@ let series = [
         :series="series"
       ></apexchart>
     </div>
+    <dropdown text="Click me" placement="bottom">
+      <list-group>
+        <list-group-item>Item #1</list-group-item>
+        <list-group-item>Item #2</list-group-item>
+        <list-group-item>Item #3</list-group-item>
+      </list-group>
+    </dropdown>
   </div>
 </template>
